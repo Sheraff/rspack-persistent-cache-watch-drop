@@ -1,6 +1,6 @@
 # Rspack: a persistent cache written by a watch session that dropped modules restores them
 
-Reproduction for https://github.com/web-infra-dev/rspack/issues/TBD. Only `@rspack/core`.
+Reproduction for https://github.com/web-infra-dev/rspack/issues/16839. Only `@rspack/core`.
 
 `fixture/src/a.js` imports a small barrel (`src/dropped/index.js` → `x.js`, `y.js`). During `compiler.watch()`,
 `a.js` is overwritten with `fixture/edited/a.js`, which has no imports, so the three `src/dropped/` modules leave the
