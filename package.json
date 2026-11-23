@@ -1,0 +1,13 @@
+{
+  "name": "rspack-persistent-cache-watch-drop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node repro.mjs",
+    "repro:panic": "node repro.mjs --rebuild-everywhere",
+    "control": "node repro.mjs --control"
+  },
+  "dependencies": {
+    "@rspack/core": "2.3.3"
+  }
+}
